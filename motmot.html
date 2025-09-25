@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday !! 😍🥀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img id="intro" src="motmot2.png"/>
+
+  <div id="home">
+    <h1>🎉 Happy Motmot, Bebe !! 🎂</h1>
+    <h3>
+      Sorry at IT student ang pinili mo at website lang ang gift ko sayo. <br/>
+      Sana ABM nlng pinili mo at baka gift ay activities done AHAHAHAHAHA <br/>
+      or mas better, bnigyan ka ng pera. 🙀 <br/><br/>
+      On a serious note, I can’t be more joyful and grateful <br/>
+      that you chose me. 🥹 <br/>
+      Labyuuu. Enjoy my gift. ^^
+    </h3>
+    <br/>
+    <button id="flower">
+      <img src="https://imgur.com/a/hawzO4u" alt="Flower" />
+    </button>
+  </div>
+
+  <div class="music">
+    <audio controls>
+      <source src="Mazzy Star - Fade Into You.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br/>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5EP8qL8rIQhGu7rmAbfct1?utm_source=generator" width="600px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <script>
+    
+    const intro = document.getElementById("intro");
+    const home = document.getElementById("home");
+    const music = document.querySelector(".music");
+
+    // hide msg n music
+    home.style.display = "none";
+    music.style.display = "none";
+
+    intro.addEventListener("click", () => {
+      intro.style.display = "none"; // hide box
+      home.style.display = "block";   // show msg
+      music.style.display = "block";  // show music
+    });
+  </script>
+</body>
+</html>
